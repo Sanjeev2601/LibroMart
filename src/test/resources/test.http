@@ -1,0 +1,55 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/SanjeevBookstoreReactTransact/api/categories
+Accept: application/json
+
+###
+
+POST http://{{host}}:8080/{{base}}/api/orders
+Accept: application/json, text/plain, */*
+Accept-Language: en-US,en
+Connection: keep-alive
+Origin: http://localhost:8080
+Referer: http://localhost:8080/SanjeevBookstoreReactTransact/checkout
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Sanjeev Parthasarathy",
+    "address": "2014 Peach Orchard Dr Apt 31",
+    "phone": "5715161403",
+    "email": "sanjeev26@vt.edu",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 7,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "items": [
+      {
+        "id": 1002,
+        "book": {
+          "bookId": 1002,
+          "title": "Dr Strange",
+          "author": "Jason Aaron",
+          "description": "\"Doctor Strange\" is a comic book series published by Marvel Comics, following the adventures of Stephen Strange, a former neurosurgeon turned sorcerer supreme. Created by writer Stan Lee and artist Steve Ditko in 1963, the series delves into the mystical and supernatural realms as Doctor Strange battles dark forces threatening the universe. Through his mastery of the mystic arts and his signature Cloak of Levitation and Eye of Agamotto, Strange protects Earth from magical threats while navigating complex moral dilemmas and personal growth as a hero. The character has become a beloved icon within the Marvel Universe, known for his wisdom, wit, and dazzling displays of magical prowess.",
+          "price": 1199,
+          "rating": 4,
+          "isPublic": true,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  }
+}
