@@ -1,0 +1,70 @@
+
+/* .category-buttons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: var(--neutral-color);
+}
+
+.button.selected-category-button {
+    background-color: var(--primary-color);
+}
+
+.button.unselected-category-button,
+.button.unselected-category-button:visited {
+    background-color: var(--neutral-color);
+}
+
+.button.unselected-category-button:hover,
+.button.unselected-category-button:active {
+    background-color: var(--primary-color);
+} */
+
+.category-buttons {
+    /* margin-top: 10px; */
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    z-index: 2;
+    /* background-color: var(--neutral-color); */
+  }
+
+  .category-buttons li a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits color from parent element */
+    background: none; /* Removes any background */
+    border: none; /* Removes any border */
+    padding: 0; /* Resets padding */
+    display: block; /* Makes the link fill the container */
+  }
+  
+  .category-buttons li.button {
+    transition: background-color 1s; /* Smooth background color transition on hover */
+  }
+  
+  .button.selected-category-button {
+    /* background-color: var(--primary-color); */
+    background-color:rgb(68, 4, 50) ;
+    border: 4px solid #000; /* Black border with 2px width */
+    border-radius: 15px; /* Optional: adds rounded corners to the border */
+    margin: 0 20px; /* Optional: adds spacing between buttons */
+  }
+  
+  .button.unselected-category-button,
+  .button.unselected-category-button:visited {
+    /* background-color: var(--neutral-color); */
+    background-color:rgb(161, 101, 144) ;
+    border: 3px solid #000; /* Black border with 2px width */
+    border-radius: 15px; /* Optional: adds rounded corners to the border */
+    margin: 0 20px; /* Optional: adds spacing between buttons */
+  }
+  
+  .button.unselected-category-button:hover,
+  .button.unselected-category-button:active {
+    /* background-color: var(--primary-color); */
+    background-color:rgb(68, 4, 50) ;
+  }
+  

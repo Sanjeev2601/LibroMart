@@ -1,0 +1,413 @@
+.checkout-page{
+    position: relative;
+    min-height: 67vh; /* Minimum height to cover the viewport height */
+    background-image: url('../images/site/Checkout.jpg'); /* Adjust path accordingly */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* These 3 lines are optional, used to center the content */
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.checkout-cart-table-view {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    width: 1100px;
+    margin-left: -45px;
+}
+.checkout-cart-table {
+    display: flex;
+    flex-direction: column;
+}
+.checkout-cart-info {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    row-gap: 2em;
+    grid-gap: 0px;
+    padding: 10px;
+
+}
+
+.checkout-display {
+    margin-top: 80px;
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.checkout-text {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom:20px;
+    /*height: 150px;*/
+    /*text-align: right;*/
+    /*//  border: 1px solid black;*/
+    /*  border-radius: 10px;*/
+}
+.checkout-page-body {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.checkout-cart-info{
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 25px;
+}
+.checkout-cart-info-ul {
+    display: contents;
+}
+.checkout-cart-info-ul > li {
+    display: contents;
+}
+.checkout-table-heading {
+    background-color: rgba(79, 203, 242, 0.32);
+    color: black;
+}
+.checkout-table-heading > * {
+    background-color: rgba(79, 203, 242, 0.32);
+    padding: 0.5em;
+}
+.checkout-heading-book {
+    grid-column: 1 / 3;
+}
+.checkout-heading-price {
+    grid-column: 3 / 5;
+    text-align: right;
+}
+.checkout-heading-subtotal {
+    text-align: right;
+    grid-column: -2 / -1;
+}
+.checkout-cart-book-image {
+    width: 90px;
+    height: 120px;
+}
+/*.checkout-cart-book-info {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    height: 150px;*/
+/*    align-items: flex-start;*/
+/*}*/
+
+.checkout-cart-book-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    margin-left: 10px;
+    align-items: flex-start;
+}
+
+.checkout-cart-book-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.checkout-cart-book-author{
+    font-size: 16px;
+    font-style: italic;
+    /*font-weight: bold;*/
+}
+.checkout-cart-book-subtotal {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+
+
+.checkout-cart-book-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkout-cart-info-img {
+    width: 90%;
+    height: 90%;
+}
+.checkout-row-line {
+    border-bottom: 1px solid black;
+}
+.checkout-num {
+    background-color: white;
+}
+.checkout-narrow-rect {
+    width: 75px;
+    height: 100px;
+}
+
+.checkout-square {
+    width: 100px;
+    height: 100px;
+}
+
+.checkout-wide-rect {
+    width: 125px;
+    height: 100px;
+}
+
+.checkout-cart-book-price {
+    padding-left: 1em;
+    text-align: right;
+}
+
+.checkout-cart-book-quantity {
+    display:flex;
+
+}
+
+.checkout-cart-book-subtotal {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/* Row separators in the table */
+
+.checkout-btn-primary {
+    font-family: "Montserrat Alternates";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    height: 25px;
+    width: 200px;
+    background-color: #1510f5;
+    color: white;
+    border: 1px solid #555;
+    margin-top: 20px;
+    margin-right: 50px;
+    border-radius: 40px;
+}
+.checkout-btn-secondary {
+    font-family: "Montserrat Alternates";
+    font-style: normal;
+    height: 25px;
+    width: 200px;
+    font-size: 20px;
+    margin-left: 30px;
+    background-color: rgba(79, 203, 242, 0.32);
+    color: black;
+    border: 1px solid #555;
+    margin-top: 10px;
+    border-radius: 40px;
+}
+
+.checkout-btn-ter {
+    font-family: "Montserrat Alternates";
+    font-style: normal;
+    height: 20px;
+    width: 100px;
+    font-size: 15px;
+    margin-left: 20px;
+    color: #1510f5;
+    background-color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 40px;
+}
+/* Increment/decrement buttons */
+
+.checkout-icon-button {
+    border: none;
+    cursor: pointer;
+}
+
+.checkout-inc-button {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    margin-right: 0.25em;
+}
+
+.checkout-btn-ter:hover {
+    color: var(--primary-color-dark);
+}
+
+.checkout-dec-button {
+    font-size: 1.125rem;
+    color: #ccc;
+}
+.checkout-dec-button:hover {
+    color: #aaa;
+}
+
+/* Chevron buttons */
+
+.checkout-dec-arrow-button,
+.checkout-inc-arrow-button {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.checkout-dec-arrow-button:hover,
+.checkout-inc-arrow-button:hover {
+    color: var(--primary-color-dark);
+}
+
+input[type="number"] {
+    width: 4em;
+}
+
+.checkout-select {
+    background-color: rgba(79, 203, 242, 0.32);
+    color: black;
+    border: 2px solid var(--primary-color-dark);
+    border-radius: 3px;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Adds some space between each form group */
+}
+
+label {
+    flex: 1; /* Allows label to take the necessary space */
+    text-align: left; /* Aligns the text of the label to the left */
+    font-weight: 600;
+    font-size: 18px;
+}
+
+input, select {
+    flex: 2; /* Allows input to take up twice the space of the label, adjust as necessary */
+}
+form {
+    background-color: rgb(248, 188, 181);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    /*height: 325px;*/
+}
+form > div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5em;
+}
+
+form > div:first-child {
+    margin-top: 0;
+}
+form > div > input,
+form > div > select {
+    background-color: rgba(231, 138, 169, 0.65);
+    margin-left: 0.5em;
+    border-radius: 0.5em;
+    border: solid black;
+}
+form  .error {
+    color: red;
+    text-align: right;
+    font-size: 0.7em;
+    color: #cc0033;
+    display: inline-block;
+    line-height: 15px;
+    margin: 5px 0 0;
+}
+.checkoutStatusBox {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+.checkout-view {
+    dsiplay: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.quantity-adjuster-1 {
+    display: flex; /* Aligns children inline */
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between; /* Spreads out children with space between */
+    margin: 10px 0; /* Only vertical margin to not push horizontally */
+    border: 2px solid #000; /* Black border with 2px width */
+    border-radius: 12px;
+    background-color: #9f2a26;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    max-width: 120px;
+    max-height: 35px;
+}
+
+.Complete-Purchase {
+    margin-top: 15px;
+    background-color: #9f2a26;
+    border: 1.5px solid #000;
+}
+.Complete-Purchase:hover {
+    margin-top: 15px;
+    background-color: rgba(159, 42, 38, 0.7);
+}
+
+.Complete-Purchase.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+.btn-cart-add1, .btn-cart-delete1{
+    background-color:#9f2a26 ;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    padding: .2rem .8rem;
+}
+.btn-cart-add1:hover{
+    background-color: rgb(253, 168, 158);
+}
+.btn-cart-delete1:hover{
+    background-color: rgb(239, 151, 141);
+}
+.checkout-box {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(248, 188, 181); /* Light purple background, similar to your screenshot */
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.checkout-box h2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adds space between the items */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 20px 0;
+}
+
+.checkout-label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.checkout-value {
+    text-align: right;
+}
+
+.checkout-value-total {
+    text-align: right;
+    font-weight: bold;
+}
+
+.cart-headings{
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}

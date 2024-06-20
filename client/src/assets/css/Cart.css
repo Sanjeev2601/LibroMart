@@ -1,0 +1,35 @@
+.cart-page {
+    position: relative;
+    min-height: 67vh;
+    background-image: url('../images/site/cart-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.deals-page {
+    position: relative;
+    min-height: 70.6vh;
+    background-image: url('../images/site/deals.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.text-background {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.wait-text {
+    color: white;
+}

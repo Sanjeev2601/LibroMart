@@ -1,0 +1,118 @@
+.popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent backdrop */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .popup-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-height: 500px;
+    max-width: 600px; /* Adjust width as needed */
+  }
+  
+  .popup-image{
+    /* height: 40px; */
+    width: 110px;
+  }
+  /* .popup-close-button {
+    float: right;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  } */
+  .popup-close-button {
+    display: block; /* or inline-block, depending on your layout */
+    position: absolute; /* or relative, depending on your layout */
+    top: 10px; /* Adjust the value to position the button */
+    right: 10px; /* Adjust the value to position the button */
+    background: #fff; /* Background color */
+    color: #000000; /* Text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Cursor appears as a pointer */
+    z-index: 10; /* Ensure it's above other content */
+    font-size: 25px;
+  }
+
+.popup-close-button:hover {
+  background: #000000;
+  color: #fff;
+}
+  
+  .popup-header {
+    display: flex;
+    border-bottom: 2px solid #0000009a;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+
+  .popup-book-cover {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .popup-book-info {
+    margin-top: 1px;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+
+  .popup-book-info h1{
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .popup-book-author {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .popup-category{
+    /* padding-top: -100px;
+    padding-bottom: 0px; */
+    margin-top: 5px;
+  }
+
+  .popup-rating{
+    margin-top: 50px;
+  }
+
+  .popup-price{
+    margin-top: -20px;
+  }
+
+  .popup-content {
+    max-height: 220px;
+    text-align: justify;
+    overflow: auto;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+  .buy-now-button {
+    margin-top: 100px;
+    margin-right: 00px;
+    background-color: #A16590;
+    border: none;
+    padding: 5px 10px; /* Reduced padding */
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.8em;
+    height: 50px;
+    width: 100px;
+  }

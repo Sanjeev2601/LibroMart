@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+.header {
+    background-color: #26001B;
+    color: white;
+    padding: 10px;
+    max-width: 100vw;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Logo_link {
+    text-decoration: none;
+  }
+  
+  .Logo_link h2{
+    color: #ffffff;
+  }
+  
+  .logo {
+    padding: 10px;
+  }
+  
+  .logo img {
+    margin-top: -40px;
+    width: 120px;
+    height: auto;
+  }
+
+  .text-logo {
+    font-family: 'Caesar Dressing', system-ui;
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .top-row {
+    margin-top: -100px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .search-bar {
+    position: relative;
+    display: flex;
+    flex-grow: 0.8;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+  }
+  
+  .search-bar input[type="search"] {
+    padding-left: 30px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: #000;
+  }
+
+  .search-bar input[type="search"]:focus {
+    outline: none;
+  }
+
+  .search-icon {
+    color: #000000;
+  }
+
+  .icons a {
+    padding: 0 10px;
+  }
+  
+  .icons {
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .icon-link {
+    color: inherit;
+  }
+
+  .icon-link:hover{
+    color: #A5889D;
+  }
+
+  .navigation {
+    margin-top: -100px;
+    width: 100%;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation ul li {
+    position: relative;
+    padding: 5px 10px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+.cart-count {
+  position: absolute;
+  margin-top: -6px;
+  right: 54px;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+.cart-count:hover{
+  color: #A5889D;
+}

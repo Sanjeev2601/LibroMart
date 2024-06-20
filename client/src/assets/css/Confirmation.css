@@ -1,0 +1,87 @@
+.confirmationView {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 67vh;
+    background-image: url('../images/site/Confirmation.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.confirmationContent {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+ul.confirmationDetails, ul.customerDetails {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+ul > li {
+    font-size: 18px;
+}
+
+.customerInfo {
+    text-align: center;
+}
+
+.customerInfo p {
+    font-weight: bold;
+
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+}
+
+.orderDetailsTable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.orderDetailsTable th,
+.orderDetailsTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    background-color: rgba(246, 208, 223, 0.61);
+}
+
+.orderDetailsTable th {
+    background-color: rgba(126, 59, 81, 0.61);
+}
+
+.OrderConfirmation {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.OrderConfirmation p {
+    margin-right: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+    margin-left: 5px;
+}

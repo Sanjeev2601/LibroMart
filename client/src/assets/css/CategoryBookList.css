@@ -1,0 +1,30 @@
+.category-page {
+    position: relative;
+    background-image: url("../images/site/3.jpg");
+    background-size: cover;
+    z-index: 1;
+}
+
+.category-page::before {
+    content: ''; /* This is necessary for the pseudo-element to show */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4); /* This white overlay has 50% opacity */
+    z-index: 1; /* Places the overlay above the background image */
+  }
+  
+  .category-page * {
+    position: relative;
+    z-index: 1;
+  }
+
+.book-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    gap: 3em;
+}

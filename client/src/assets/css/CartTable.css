@@ -1,0 +1,306 @@
+.cart-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.empty-cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.empty-cart-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.continue-shopping-empty {
+    background-color: #4484cb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.continue-shopping-empty:hover {
+    background-color: #0056b3;
+}
+
+.empty-cart-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111111;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th:first-child,
+.cart-table td:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.cart-table thead {
+    border-bottom: 2px solid #ccc;
+}
+
+.cart-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+.cart-table img {
+    width: 50px;
+    height: auto;
+}
+.books-info {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.book-title{
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+.book-author1{
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 505;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 10px;
+}
+.cart-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.clear-cart-button,
+.continue-shopping-button,
+.checkout-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.clear-cart {
+    background-color: #ef978d;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.clear-cart:hover {
+    background-color: #e82c1d;
+}
+
+.continue-shopping{
+    background-color: #1d6db7;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.continue-shopping:hover {
+    background-color: #0063c6;
+}
+
+.proceed-to-checkout {
+    background-color: #3dd249;
+    color: white;
+    font-weight: bold;
+}
+
+.proceed-to-checkout:hover {
+    background-color: #28b534;
+}
+
+.icon-button {
+    font-size: 16px;
+    color: #555;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.icon-button:hover {
+    color: #333;
+}
+
+.icon-button:hover .fa-plus{
+    color: #FFFFFF;
+}
+
+.icon-button:hover .fa-minus{
+    color: #FFFFFF;
+}
+
+.quantity {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+.book-price1{
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: translate(0%, -120%);
+}
+.book-price1{
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: translate(0%, -120%);
+}
+.book-quantity1{
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: translate(0%, -100%);
+}
+.book-amount1{
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: translate(0%, -120%);
+}
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cart-table-container {
+    flex-grow: 1;
+}
+
+.cart-summary-container {
+    flex-basis: 300px;
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.proceed-to-checkout {
+    margin-left: 5px;
+    display: ruby-text;
+    min-width: 193px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #000000;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none !important;
+}
+.button-container {
+    display: flex;
+    margin: 5px 5px;
+    height: 40px; /* match the height of the subscribe button */
+    width: auto;
+    padding: 0 20px; /* add padding inside the button */
+    font-size: 16px; /* consistent font size across buttons */
+    text-align: center; /* centers text inside the button */
+    justify-content: center;
+    vertical-align: middle; /* aligns button text vertically */
+    cursor: pointer; /* changes cursor to pointer on hover */
+    outline: none; /* removes outline when focused */
+}
+.clear-cart{
+    min-width: 115px;
+    margin-left: 135px;
+    margin-right: 5px;
+    border: 2px solid #000000;
+}
+.continue-shopping{
+    margin-left: -15px;
+    min-width: 179px;
+    border: 2px solid #000000;
+    /*margin-right: 10px;*/
+}
+.cart-summary-container1{
+    margin-top: 9.5px;
+}
+.cart-summary-container1 hr {
+    border: none;
+    border-top: 2px solid #000000; /* Adjust the border properties as needed */
+    margin: 10px 0; /* Adjust the margin as needed */
+}
+.promo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.promo-container input,
+.promo-container button {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle; /* Aligns the elements to the middle */
+    padding: 0 10px; /* Adds padding inside the button and input */
+    font-size: 16px; /* Ensures text size is consistent */
+}
+
+.promo-container input[type="text"] {
+    /*margin-right: 10px;*/
+}
+.DiscountMessage{
+    display: none;
+    color: #2ecc40;
+}
+.subtotal-section h4 {
+    margin-top: 8px;  /* Reduces the space above each h4 */
+    margin-bottom: 8px; /* Reduces the space below each h4 */
+    font-size: 1rem; /* Adjusts the size to ensure it's not too large, optional */
+}
+
+.cart-summary-title {
+    margin-top: 4px; /* Minimize space above the h4 */
+    margin-bottom: 4px; /* Minimize space below the h4 */
+    font-size: 1.5rem; /* Optional: Adjust font size if needed */
+}

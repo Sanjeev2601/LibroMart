@@ -1,0 +1,195 @@
+.home-page {
+    position: relative;
+    display: flex;
+    background-image: url("../images/site/Home_bg.jpg");
+    background-size: cover;
+    max-height: 100vh;
+    z-index: 1;
+  }
+  .dark-background {
+    background-color: rgba(38, 0, 27, 0.8 ); /* Adjust the last value (alpha) to control opacity */
+  }
+  
+  .book-of-the-day {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Replace with the actual background color */
+    padding: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    max-width: 1110px; /* Match the width in the provided design */
+    box-shadow: 0px 4px 8px rgba(88, 32, 107, 0.9); /* Example shadow */
+  }
+  
+  .book-image img {
+    width: auto; /* Adjust based on actual image size */
+    max-height: 250px; /* Adjust based on actual image size */
+    margin-right: 17px; 
+    margin-top: 27px;
+  }
+  
+  .book-info {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .book-info h1 {
+    font-family: Helvetica;
+    margin-top: -20px;
+    /* text-align: center; */
+    margin-left: 50px;
+    font-size: 2em;
+    color: #FFF; /* Replace with actual color */
+    margin-bottom: 0.5em;
+  }
+  
+  .book-info h2 {
+    font-size: 1.5em;
+    color: #FFF; /* Replace with actual color */
+    margin-bottom: 0.5em;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .book-info .author {
+    font-size: 1em;
+    color: #FFF; /* Replace with actual color */
+    margin-bottom: 1em;
+    font-style: italic;
+    font-weight: 550;
+  }
+  
+  .book-info .description {
+    font-family:cursive ;
+    font-size: 19px;
+    color: #FFF; /* Replace with actual color */
+    margin-bottom: 1em;
+  }
+  
+  .index_add_to_cart {
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 125px;
+  }
+  
+  button {
+    background-color: #855875; /* Replace with actual button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #26001B; /* Darken button on hover */
+  }
+  
+  .welcome-text {
+    width: 20em;
+  }
+  
+  .category-image-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  
+  .category-image-items a {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .category-image-items div {
+    padding: 0.5em 0;
+    background: rgba(0, 0, 0, 0.5); /* last # is percent opacity */
+    color: white;
+    transform: translateY(-2.25em);
+    margin-bottom: -2em;
+  }
+
+.rectangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55px;
+  /* margin-left: -16px; */
+  width: 320px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: rgba(133, 88, 117, 0.75); /* Adjust color as needed */
+}
+.rectangle h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  right: 10px;
+  text-align: center;
+}
+
+  .promotion {
+    margin-left: 20px;
+    color: white;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    width: 284px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide the overflow of child elements */
+  }
+
+  .promotion-text h2 {
+    margin-top: -100%;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+  }
+
+  .book-carousel {
+    position: relative;
+    width: 100%;
+    height: 120px; /* Set a height that fits the book covers */
+    overflow: hidden; /* Hide the overflow of the moving book covers */
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .carousel-track {
+    display: flex;
+    width: calc(100px * 10); /* Adjust based on the number of images and their width */
+    animation: scrollBooks 10s linear infinite; /* Adjust time as needed */
+  }
+  
+  .carousel-track img {
+    width: auto;
+    height: 100px; /* Adjust height as needed */
+    flex-shrink: 0; /* Prevent images from shrinking */
+    margin-right: 10px;
+  }
+  
+  @keyframes scrollBooks {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-40%); /* Adjust based on the number of images */
+    }
+  }
+  
+  .shop-now button {
+    background-color: #855875;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .shop-now button:hover {
+    background-color: #26001B;
+  }
+  

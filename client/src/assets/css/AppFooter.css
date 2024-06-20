@@ -1,0 +1,141 @@
+.footer {
+    background-color: #26001B;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-height: 15.1vh;
+    overflow: hidden;
+  }
+  
+  .social-media {
+    flex: 1;
+  }
+  
+  .social-media .icon {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .newsletter {
+    margin-top: 5px;
+    flex: 2;
+    text-align: center;
+  }
+  
+  .newsletter p {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  
+  .newsletter input[type="email"] {
+    margin-right: 5px;
+  }
+  
+  .checkbox-container {
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-top: -7px;
+    margin-right: 5px;
+  }
+  
+  .newsletter label {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+  }
+  
+  .newsletter input[type="email"] {
+    color: black;
+  }
+
+  .footer-links {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .footer-links a {
+    font-size:large;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  .subscribe_footer{
+    padding: 5px 5px;
+    background-color: #A9889D;
+  }
+  
+  .subscribe_footer:hover {
+    background-color: #50113f9a;
+  }
+  
+  .social-media {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  .social-media h5 {
+    margin-top: auto;
+    text-align: center;
+    justify-content: center;
+    margin-left: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons a {
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .social-media, .footer-links, .newsletter {
+      margin-bottom: 10px;
+    }
+  
+    .footer-links {
+      text-align: center;
+    }
+  }
+  

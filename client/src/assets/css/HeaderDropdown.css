@@ -1,0 +1,52 @@
+.header-dropdown {
+  position: relative;
+   /*display: block;*/
+  /* align-items: center; */
+}
+
+.categories-button {
+  /* background-color: var(--primary-color-dark); */
+  /* margin-top: 0.25em; */
+  border: none;
+}
+
+.dropdown-menu {
+  display: none;
+}
+.header-dropdown ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%; /* Align the top of dropdown with the bottom of the button */
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px rgba(246, 70, 70, 0.2); /* Optional: Adds a shadow for the dropdown */
+  z-index: -1; /* Ensure dropdown is above other content */
+}
+
+.header-dropdown .dropdown-menu li a {
+  color: black; /* This will ensure the dropdown links are black */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-dropdown li {
+  padding: 0.25em 0.5em;
+}
+
+.header-dropdown ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-dropdown li:hover {
+  background: rgb(165, 136, 157);
+  text-emphasis-color: white;
+}
+
+.header-dropdown:hover ul {
+  display: block; /* Show dropdown on hover */
+  min-width: 8em;
+  z-index: 2;
+}
